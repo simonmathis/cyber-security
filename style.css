@@ -1,0 +1,65 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --container-bg: #333;
+	--container-txt-color: white;
+    --text-color: #111528;
+    --secondary-text: #232738;
+	--content-txt-color: #070b1d;
+    --content-txt-color-ndm: #070b1d;
+    --collapsible-color: #eee;
+    --collapsible-color-after: #cccc;
+    --primary-color: #3a435d;
+    --accent-color: #5D3FD3;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.darkmode{
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --container-bg: #333;
+	--container-txt-color: white;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+	--content-txt-color: white;
+    --content-txt-color-ndm: #070b1d;
+    --collapsible-color: #eee;
+    --collapsible-color-after: #cccc;
+    --primary-color: #3a435d;
+    --accent-color: #5D3FD3;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+#theme-switch{
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+body{
+	background-color: var(--base-color);
+}

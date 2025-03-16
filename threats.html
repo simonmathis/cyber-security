@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/_header.css">
+    <link rel="stylesheet" href="/footer/_footer.css">
+	<link rel="stylesheet" href="/threats.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threats</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico.png">
+    <script type="text/javascript" src="/darkmode.js" defer></script>
+    <script type="text/javascript" src="graphs.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/index.html">
+                <img src="/assets/favicon.ico.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">About</a></li>
+            <li><a class="active" href="/threats.html">Threats</a></li>
+            <li><a href="/solutions.html">Solutions</a></li>
+            <li><a href="/encryption.html">Encryption</a></li>
+            <li><a href="/feedback.html">Feedback</a></li>
+        </ul>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+    </nav>
+	
+	<section>
+        <h2>Understanding Cybersecurity and its different forms</h2>
+        <p>Cybersecurity threats are harmful activities aimed at damaging or stealing data, or causing disruption in the digital world. These threats can originate from various entities like cybercriminals, nation-states, and even cyberterrorists, and they employ different tactics such as computer viruses, data breaches, Denial of Service (DoS) attacks, among others..</p>
+        <h2>Common Types of Cybersecurity Issues</h2>
+        <ul>
+            <li><strong>Cybercrime:</strong> This involves individuals or groups who target systems for monetary gain or to cause disruption. Tactics used include malware, ransomware, and phishing scams to extort money or steal private or sensitive information from individuals and companies.</li>
+            <li><strong>Cyber-attacks:</strong> These are usually politically motivated and involve information gathering. Nation-states and governments often fund hackers and threat groups to further their national interests.</li>
+            <li><strong>Ransomware:</strong> Ransomware is a type of malware that encrypts files or systems and demands payment (usually in cryptocurrency) for their release. It can spread rapidly across a network and cause significant damage.</li>
+            <li><strong>Cyberterrorism:</strong> This aims to undermine electronic systems to instill panic or fear. Since these groups are well-funded, their operations often pose some of the most advanced cyber threats.</li>
+        </ul>
+    </section>
+	<div class="charts-container">   
+        <div class="pie_chart">
+            <canvas id="Chart" style="width:100%; max-width:600px"></canvas>
+        </div>
+        <div class="bar_chart">
+            <canvas id="myChart" style="width:100%; max-width:600px"></canvas>
+        </div>
+    </div>
+	<section>
+		<div class="analysis">
+			<h2>Chart Analysis</h2>
+			<p>From these graphs we can see a number of details. For example, from the pie chart, we can see that the sector that is subjected to the most cyber attacks is Healthcare. This obviously is a disturbing figure as our health data is very personal and having it leaked can be detrimental for a business as 
+			   not only does it break the Data Protection Act but also it may cause people to switch to a company with better security.
+			   Another thing we can see from this data is that there is a steadily increacing cost of cybercrimes world wide with 2023 costing the world a staggering $11.5 trillion. This figure will only increace in the coming years highlighting the vitality of safe and secure data.</p>
+		</div>
+	</section>
+	
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <span>&copy; 2025</span>
+            </div>
+            <div class="footer-right">
+                <button onclick="location.href='/footer/privacy.html'">Privacy Policy</button>
+                <button onclick="location.href='/footer/accessibility.html'">Accessibility Features</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

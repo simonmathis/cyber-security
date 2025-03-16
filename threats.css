@@ -1,0 +1,43 @@
+.navbar a.active {
+	color: var(--accent-color);
+}
+
+body{
+	color: var(--content-txt-color);
+}
+
+section{
+	padding: 20px;
+}
+
+h2{
+	color: var(--content-txt-color);
+}
+
+p{
+	line-height: 1.6;
+	color: var(--content-txt-color);
+}
+
+ul{
+	color: var(--content-txt-color);
+}
+
+.charts-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	max-width: 2000px;
+	margin: 0 auto;
+	height: 90vh;
+}
+
+.pie_chart, .bar_chart{
+	flex: 1;
+	max-width: 900px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

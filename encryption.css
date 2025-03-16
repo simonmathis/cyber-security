@@ -1,0 +1,78 @@
+.navbar a.active{
+    color: var(--accent-color);
+}
+
+body{
+	color: var(--content-txt-color);
+}
+
+section{
+	padding: 20px;
+}
+
+h2{
+	color: var(--content-txt-color);
+}
+
+p{
+	line-height: 1.6;
+	color: var(--content-txt-color);
+}
+
+.dyk{
+    border-radius: 15px 50px;
+    padding: 20px;
+    max-width: 98%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dyk p{
+	color: var(--content-txt-color-ndm);
+}
+
+.break{
+    color: var(--heading-color);
+    border-top: 3px solid var(--primary-color);
+    padding-top: 5px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.encryption-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.encryption-container p{
+    color: var(--content-txt-color-ndm);
+}
+
+.image {
+    flex: 0.4;
+    max-width: 40%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.text {
+    flex: 0.6;
+    max-width: 60%;
+    font-size: 1rem;
+    color: #333;
+}

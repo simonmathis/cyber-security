@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/_header.css">
+    <link rel="stylesheet" href="/footer/_footer.css">
+    <link rel="stylesheet" href="/encryption.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico.png">
+    <script type="text/javascript" src="/darkmode.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/index.html">
+                <img src="/assets/favicon.ico.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">About</a></li>
+            <li><a href="/threats.html">Threats</a></li>
+            <li><a href="/solutions.html">Solutions</a></li>
+            <li><a class="active" href="/encryption.html">Encryption</a></li>
+            <li><a href="/feedback.html">Feedback</a></li>
+        </ul>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+    </nav>
+
+    <section>
+        <h3>Understanding Encryption</h3>
+        <p>Encryption is the process of scrambling data in such a way that only legitimate users can read it and of course so that nobody other than legitimate users can read it. The Encrypted text is called cyphertext. The algorithm to encrypt and decrypt the text is called the cipher. Encryption is a 2 way process - encrypt and decrypt.</p>
+
+        <h2>Did YOU know?</h2>
+        <div class="dyk">
+            <p>The earliest documented instance of encryption was about 4000 years ago in Egypt in the tomb of Khnumhotep II (the script contained the deeds of his life). It was just unusual hieroglyphics. In that time, encryption was mainly used to safeguard knowledge as education was a privilege reserved for the elite. The first known use of encryption for military purposes can be traced back to around 500 BC with the Spartans. They used a device called thge scytale, which enabled the tranmission and reception of secret messages. A thin strip of parchment was wrapped around teh device and the message was written along its length. When the strip was unwound from the cylinder, the message became indecipherable unloess the reader had a cylinder of the same size. This marked the inaugural use of a common key, a concept still prevelant in today's cryptographic technologies, for botyh encyrption and decryption.</p>
+        </div>
+
+        <div class="break">
+            <h1>Modern Encryption:</h1>
+            <h3>Modern day encryption includes two main types:</h3>
+            <ol>
+                <li><strong>Symmetric Encryption</strong> - where the same key is used to encrypt and decrypt</li>
+                <li><strong>Asymmetric Encryption</strong> - where different keys are used to encrypt and decrypt</li>
+            </ol>
+        </div>
+        
+        <h3>How symmetric and asymmetric encyrption really work:</h3>
+        <div class="encryption-container">
+            <div class="image">
+                <img src="/assets/symmetric-encryption.jpg" alt="symmetric encryption diagram">
+            </div>
+            <div class="text">
+                <p>Symmetric encryption, the simplest type of encryption, involves only one key which is used both to encrypt and decrypt information. This key is secret. It is blended with the plain text of a message to change the content in a particular way. Both the sender and the recipient must know the key so that they can encrypt and decrypt all the messages. Examples of symmetric encrption include AES, RC4, DES, RC5, and RC6. The most widely used symmetric encryption algorithms are AES-128, AES-192, and AES-256.</p> 
+            </div>
+        </div>
+        <div class="encryption-container">
+            <div class="image">
+                <img src="/assets/asymmetric-encryption.jpg" alt="asymmetric encrption diagram">
+            </div>
+            <div class="text">
+                <p>Asymmetric encryption, also known as public key cryptography, works by using two keys to encrypt plain text. Public keys are exchanged over the internet or a large network. This public key is also made freely available to anyone who might want to send you a message. The second private key, however, is kept private. This ensures that malicious persons do not misuse the keys. A message that is encrypted using a public key can only be decrypted using the private key. This means that security of the public key is not required as it is publicly available and can be passed over the internet. At the heart of asymmetric encryption lies a cryptographic algorithm. This algorithm uses a key generation protocol (a kind of mathematical function) to generate a key pair. Both the keys are mathematically connected with each other. This relationship between the keys differs from one algorithm to another. This makes asymmetric encyrption incredibly secure making it the better of the two options.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <span>&copy; 2025</span>
+            </div>
+            <div class="footer-right">
+                <button onclick="location.href='/footer/privacy.html'">Privacy Policy</button>
+                <button onclick="location.href='/footer/accessibility.html'">Accessibility Features</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

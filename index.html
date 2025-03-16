@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/_header.css">
+    <link rel="stylesheet" href="/footer/_footer.css">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico.png">
+    <script type="text/javascript" src="/darkmode.js" defer></script>
+    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="/encrypt.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/index.html">
+                <img src="/assets/favicon.ico.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="active" href="/index.html">About</a></li>
+            <li><a href="/threats.html">Threats</a></li>
+            <li><a href="/solutions.html">Solutions</a></li>
+            <li><a href="/encryption.html">Encryption</a></li>
+            <li><a href="/feedback.html">Feedback</a></li>
+        </ul>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+    </nav>
+
+    <div class="datetime">
+        <h1>The current date and time is: </h1>
+        <span id="datetime"></span>
+    </div>
+    <br>
+    <div class="welcomemsg">
+        <h1><span id="welcome">Welcome to Cyber Security!</span></h1>
+        <p>At cyber security we are dedicated to equipping you with the knowledge needed to stay safe. We believe that in an age where computers are becoming increacing instrumental in our everyday lives, having the knowledge about how to stay safe is the first step towards a safer internet. This website was created to give you an up-to-date overview of modern day cyber-security. </p>
+        <p>A threats page includes an overview of different types of threats that face modern-day companies. It includes graphs to help visualise statistics on for example, how much cybercrime has cost the world in past years. Finally, it includes an comprehensive analysis of these graphs. </p>
+        <p>The Solutions page gives a quick overview of why it is important to mitigate cybersecurity threats. It then goes into detail on 4 specific ways that companies or firms can stay safe and keep their data safe. While the examples are for larger firms, the principles apply even you us.</p>
+        <p>An encryption page gives a sophisticated and in-depth look into different types of encryption starting with an overview of what encryption is and why it is even needed! It then does a deep dive into two types of encryption - symmetric and asymmetric encryption. This deep dive includes diagrams of how each type of encryption works along with a comprehensive explanation. As an added bonus at the bottom of <a href="#div_id">this page</a> there is an example of how encryption works in a Caesar cypher. Follow the link to find out more!</p>
+    </div>
+    
+    <div class="partnersdiv">
+        <h2>Our partners</h2>
+        <p>The partners below have been chosen due to their reputable actions and strong performances in the past. If you have any questions or concerns feel free to reach out by contacting us <a href="/feedback.html">here</a>.</p>
+        <div class="partners">
+            <img src="/assets/infinityfree_logo.png" alt="aws icon">
+            <img src="/assets/aws-ico.png" alt="aws icon">
+            <img src="/assets/ms-ico.png" alt="aws icon">
+        </div>
+    </div>
+    <br>
+    <div class="user-encrypt" id="div_id">
+        <h2>Caesar Cipher Encryptor</h2>
+        <p>Below is an example of a one of the earliers types of encryption called the carsar cipher. It was named after Julius Caesar who used it "with a shift of three to protect messages of military significance".</p>
+        <br>
+        <h3>How it works.</h3>
+        <ol>
+            <li>Enter the message that you want to encrypt.</li>
+            <li>Enter the value that you want to shift your message by. (eg. enter 3 for A to become D etc.)</li>
+            <li>Click encrypt and let the algorith encrypt your message.</li>
+        </ol>
+        <div class="boxes">
+            <input type="text" id="inp" placeholder="Enter text to encrypt">
+            <input type="number" id="shift" placeholder="Enter shift value">
+            <button onclick="encrypt()">Encrypt</button>
+        </div>
+        <p>Encrypted Message:</p>
+        <p id="output"></p>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <span>&copy; 2025</span>
+            </div>
+            <div class="footer-right">
+                <button onclick="location.href='/footer/privacy.html'">Privacy Policy</button>
+                <button onclick="location.href='/footer/accessibility.html'">Accessibility Features</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
